@@ -1,0 +1,82 @@
+<! Doctype HTML>
+<html>
+    <head>
+        <title>Html 5 y CSS</title>
+ <LINK href="estilo.css" rel="stylesheet" type="text/css">
+    </head>
+      <header class="estilo_bloque">
+           <img class="img-circulo" src="img/foto_perfil.jpg">
+           <p>Pablo Orlando López Jiménez</p>
+            <nav> <!-- Menu tipo Navegador -->
+            <p class="navegador">
+                <a href="contenido_compuesto.html">Inicio</a> |
+                <a href="estructura_basica.html">PHP</a> |
+                <a href="contenido_simple.html">.NET</a> |
+                <a href="tablas.html">JAVA</a> |
+            </p>
+            </nav>
+        </div>
+        </header>
+      
+    <ol type="1" start="1"> <!-- LISTA ORDENADA  -->
+    <h3> Lenguajes de Programación </h3>
+         <li >Paginas Web</li>
+         <ul class = "vi1"> <!-- LISTA Desordenada  -->
+           <li>Jsp</li>
+           <li>Aspx</li>
+           <li>Php</li>
+         </ul class = "vi2" >
+         <li>Aplicaciones</li>
+         <ul class ="vi2">  <!-- LISTA Desordenada  -->
+           <li>Java</li>
+           <li>Visual Basic</li>
+           <li>C#</li>
+         </ul>
+       </ol>
+
+       <div class="estilo_bloque">
+           <table>
+               <tr><td colspan="2">Programacion Web</td></tr>
+               <tr><td>Asp</td><td>Jsp</td></tr>
+               <tr><td>Php</td><td>Ruby</td></tr>
+               <tr><td>Python</td><td>Go</td></tr>
+           </table>
+       </div>
+       <div class="estilo_bloque">
+            <form>
+      <input type="text" name="txt_nombres" placeholder="Ingrese Nombres" id="nombre" required>
+      <input type="text" name="txt_apellidos" placeholder="Ingrese Apellidos" id="apellidos" required>
+      <input type="number" name="txt_telefono" placeholder="Ingrese Numero Telefonico" id="telefono" required>
+      <input type="email" name="txt_correo" placeholder="Ingrese Correo Electronico" id="correo" required>
+      <input type="date" name="txt_fn" placeholder="Ingrese Fecha Nacimiento" id="fechaNac" required>
+      <textarea name="txt_mensaje" placeholder="Ingrese el Mensaje" id="mensaje"></textarea>
+      
+    <input type="submit" class="boton"onclick="fun()">       
+    </form>
+       </div>
+       <div class="estilo_bloque" id="redes_sociales" >
+        <h3>Redes Sociales</h3>
+        <a href="#"><img src="img/facebook.png"></a>
+        <a href="#"><img src="img/twitter.png"></a>
+       </div>
+       <div>
+       <script>
+        function fun(){
+            var nombre =document.getElementById("nombre").value;
+            var apellidos  =document.getElementById("apellidos").value
+            var telefono =document.getElementById("telefono").value
+            var correo =document.getElementById("correo").value
+            var fechaNac =document.getElementById("fechaNac").value
+            var mensaje =document.getElementById("mensaje").value
+            
+            
+            alert(nombre +"\n"+ apellidos + "\n" + telefono + "\n" + correo+"\n"+fechaNac+"\n"+mensaje);
+        }
+    </script>
+        </div>
+     </body>
+    <footer>
+            <p  align=center>Aprende a Programar
+                 Fácil y Rápido &copy;</p>
+    </footer>
+</html>
